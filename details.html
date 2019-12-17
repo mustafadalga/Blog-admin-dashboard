@@ -1,40 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Bootstrap Theme</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="assets/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="assets/css/style.css"
-    />
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+  integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+</head>
+
+<body>
+  <section class="all-content">
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
       <div class="container">
         <a href="index.html" class="navbar-brand">Blogen</a>
 
-        <button
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-        >
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -56,140 +40,131 @@
 
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown mr-3">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-              >
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
                 <i class="fas fa-user"></i> Welcome Joe
               </a>
               <div class="dropdown-menu">
                 <a href="profile.html" class="dropdown-item">
-                  <i class="fas fa-user-circle"></i> Profile</a
-                >
-                <a href="settings.html" class="dropdown-item">
-                  <i class="fas fa-cog"></i> Settings</a
-                >
-              </div>
-            </li>
-            <li class="nav-item">
-              <a href="login.html" class="nav-link">
-                <i class="fas fa-user-times"></i> Logout
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+                  <i class="fas fa-user-circle"></i> Profile</a>
+                  <a href="settings.html" class="dropdown-item">
+                    <i class="fas fa-cog"></i> Settings</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a href="login.html" class="nav-link">
+                    <i class="fas fa-user-times"></i> Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
-    <!--HEADER-->
-    <header id="main-nav" class="py-2 bg-primary text-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1>Post One</h1>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!--END HEADER-->
-
-    <!--ACTIONS-->
-    <section id="actions" class="py-4 mb-4 bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <a href="index.html" class="btn btn-light btn-block">
-              <i class="fas fa-arrow-left"></i> Back To Dashboard
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="index.html" class="btn btn-success btn-block">
-              <i class="fas fa-check"></i> Save Changes
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="index.html" class="btn btn-danger btn-block">
-              <i class="fas fa-trash"></i> Delete Post
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--END ACTIONS-->
-
-    <!-- DETAILS-->
-    <section id="details">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="card">
-              <div class="card-header">
-                <h4>Edit Post</h4>
-              </div>
-              <div class="card-body">
-                <form>
-                  <div class="form-group">
-                    <label for="title">Title</label>
-                    <input type="text" class="form-control" value="Post One" />
-                  </div>
-                  <div class="form-group">
-                    <label for="category">Category</label>
-                    <select class="form-control">
-                      <option value="" selected>Web Development</option>
-                      <option value="">Tech Gadgets</option>
-                      <option value="">Business</option>
-                      <option value="">Healty & Wellness</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="image">Upload Image</label>
-                    <div class="custom-file">
-                      <input type="file" class="custom-file-input" id="image" />
-                      <label for="image" class="custom-file-label"
-                        >Choose File</label
-                      >
-                    </div>
-                    <small class="form-text text-muted">Max Size 3mb</small>
-                  </div>
-                  <div class="form-group">
-                    <label for="body">Body</label>
-                    <textarea name="editor1" class="form-control">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, veritatis quasi iusto sint commodi error praesentium exercitationem voluptatibus suscipit, delectus incidunt dicta aliquid tenetur voluptatum deleniti illo quae totam quis facere fugiat? Rem, earum! Rerum hic voluptas enim! Voluptate, et obcaecati enim saepe facilis temporibus ea tenetur quis vitae possimus fugiat minima quibusdam optio excepturi?</textarea
-                    >
-                  </div>
-                </form>
+        <!--HEADER-->
+        <header id="main-nav" class="py-2 bg-primary text-white">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h1>Post One</h1>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </header>
+        <!--END HEADER-->
 
-    <!-- END DETAILS-->
+        <!--ACTIONS-->
+        <section id="actions" class="py-4 mb-4 bg-light">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <a href="index.html" class="btn btn-light btn-block">
+                  <i class="fas fa-arrow-left"></i> Back To Dashboard
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="index.html" class="btn btn-success btn-block">
+                  <i class="fas fa-check"></i> Save Changes
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="index.html" class="btn btn-danger btn-block">
+                  <i class="fas fa-trash"></i> Delete Post
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--END ACTIONS-->
 
-    <!--FOOTER-->
-    <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <p class="lead text-center">
-              Copyright &copy; <span id="year"></span>
-              Blogen
-            </p>
+        <!-- DETAILS-->
+        <section id="details">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Edit Post</h4>
+                  </div>
+                  <div class="card-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" class="form-control" value="Post One" />
+                      </div>
+                      <div class="form-group">
+                        <label for="category">Category</label>
+                        <select class="form-control">
+                          <option value="" selected>Web Development</option>
+                          <option value="">Tech Gadgets</option>
+                          <option value="">Business</option>
+                          <option value="">Healty & Wellness</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="image">Upload Image</label>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="image" />
+                          <label for="image" class="custom-file-label">Choose File</label>
+                        </div>
+                        <small class="form-text text-muted">Max Size 3mb</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="body">Body</label>
+                        <textarea name="editor1" class="form-control">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, veritatis quasi iusto sint commodi error praesentium exercitationem voluptatibus suscipit, delectus incidunt dicta aliquid tenetur voluptatum deleniti illo quae totam quis facere fugiat? Rem, earum! Rerum hic voluptas enim! Voluptate, et obcaecati enim saepe facilis temporibus ea tenetur quis vitae possimus fugiat minima quibusdam optio excepturi?</textarea>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- END DETAILS-->
+      </section>
+      <!--FOOTER-->
+      <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p class="lead text-center">
+                Copyright &copy; <span id="year"></span>
+                Blogen
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <!--END FOOTER-->
-  </body>
-</html>
-<script src="assets/js/jquery-3.3.1.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
+      </footer>
+      <!--END FOOTER-->
+    </body>
 
-<script>
-  $('#year').text(new Date().getUTCFullYear());
-  CKEDITOR.replace('editor1');
-</script>
+    </html>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/js.js"></script>
+    <script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
+
+    <script>
+      CKEDITOR.replace('editor1');
+    </script>

@@ -4,79 +4,75 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Bootstrap Theme</title>
+  <title>Login</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+  integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" media="screen" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
-    <div class="container">
-      <a href="index.html" class="navbar-brand">Blogen</a>
+  <section class="all-content">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Blogen</a>
+      </div>
+    </nav>
 
-
-    </div>
-  </nav>
-
-  <!--HEADER-->
-  <header id="main-nav" class="py-2 bg-primary text-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h1><i class="fas fa-user"></i> Blogen Admin</h1>
+    <!--HEADER-->
+    <header id="main-nav" class="py-2 bg-primary text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1><i class="fas fa-user"></i> Blogen Admin</h1>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  <!--END HEADER-->
+    </header>
+    <!--END HEADER-->
 
-  <!--ACTIONS-->
-  <section id="actions" class="py-4 mb-4 bg-light">
-    <div class="container">
-      <div class="row">
-      
+    <!--ACTIONS-->
+    <section id="actions" class="py-4 mb-4 bg-light">
+      <div class="container">
+        <div class="row"></div>
       </div>
-    </div>
-  </section>
-  <!--END ACTIONS-->
+    </section>
+    <!--END ACTIONS-->
 
-  <!-- LOGIN-->
-  <section id="login">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 mx-auto">
-          <div class="card">
-            <div class="card-header">
-              <h4>Account Login</h4>
+    <!-- LOGIN-->
+    <section id="login">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="text-center">Account Login</h4>
+              </div>
+
+              <div class="card-body">
+                <form action="index.html">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" />
+                  </div>
+                  <input type="submit" class="btn btn-primary btn-block" value="Login" />
+                </form>
+              </div>
             </div>
           </div>
-     <div class="card-body">
-       <form action="index.html">
-         <div class="form-group">
-           <label for="email">Email</label>
-           <input type="text" class="form-control">
-         </div>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" class="form-control">
         </div>
-        <input type="submit" class="btn btn-primary btn-block" value="Login"
-        >
-       </form>
-     </div>
-        </div>
-
       </div>
-    </div>
+    </section>
+
+    <!-- END LOGIN-->
   </section>
-
-  <!-- END LOGIN-->
-
   <!--FOOTER-->
+
   <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
     <div class="container">
       <div class="row">
@@ -90,15 +86,9 @@
     </div>
   </footer>
   <!--END FOOTER-->
-
-
 </body>
 
 </html>
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-
-<script>
-  $('#year').text(new Date().getUTCFullYear());
-</script>
+<script src="assets/js/js.js"></script>
